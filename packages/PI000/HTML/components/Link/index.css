@@ -1,0 +1,6 @@
+.link {
+    text-decoration: none;
+}
+.link.link--primary, .link.link--primary:visited {
+    color: #222;
+}
