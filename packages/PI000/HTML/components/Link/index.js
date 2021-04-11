@@ -1,13 +1,25 @@
 import "./index.css";
 
-function createLink({label, href, primary=false}) {
-    let link = document.createElement('a');
-    link.innerText = label;
-    link.href = href;
+function createLink({ label, href, primary = false, highlighted = false }) {
+  let link = document.createElement("a");
+  let classList = ["link"];
+  link.innerText = label;
+  link.href = href;
 
-    const mode = primary ? 'link--primary' : 'link-secondary';
+  const mode = primary ? "link--primary" : "link--secondary";
+  classList.push(mode);
 
-    link.classList.add(...['link', mode]);
+  if (highlighted) {
+    classList.push("link--highlighted");
+  }
+
+  link.classList.add(...classList);
+  return link;
+}
+
+export const linkInterface = () => {
+    let link = new HTMLAnchorElement();
+    link.innerText = 'link created by interface';
     return link;
 }
 
