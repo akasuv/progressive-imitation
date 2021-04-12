@@ -22,10 +22,12 @@
   width: 20px;
   display: inline-block;
   padding-right: 13px;
+  color: #9aa0a6;
 }
 .icon-wrapper.search svg {
   height: 100%;
   width: 100%;
+  fill: currentColor;
 }
 .icon-wrapper.voice-mic {
     width: 24px;
