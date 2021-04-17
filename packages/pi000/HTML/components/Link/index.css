@@ -1,0 +1,21 @@
+@import "../../global/style.css";
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration-line: underline;
+}
+.link.link--primary,
+.link.link--primary:visited {
+  color: var(--primary-color);
+  font-size: var(--primary-font-size);
+}
+.link.link--secondary,
+.link.link--secondary:visited {
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
+.link.link--secondary.link--highlighted {
+  color: var(--highlighted-color);
+}
