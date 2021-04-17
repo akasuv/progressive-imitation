@@ -1,5 +1,5 @@
 {
-  "name": "compound",
+  "name": "progressive-imitation",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akasuv/compound.git"
+    "url": "git+https://github.com/akasuv/progressive-imitation.git"
   },
   "author": "Chris Su",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akasuv/compound/issues"
+    "url": "https://github.com/akasuv/progressive-imitation/issues"
   },
-  "homepage": "https://github.com/akasuv/compound#readme",
+  "homepage": "https://github.com/akasuv/progressive-imitation#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@storybook/addon-actions": "^6.2.7",
