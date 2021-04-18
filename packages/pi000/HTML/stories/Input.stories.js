@@ -1,10 +1,10 @@
-import createInput from "../components/Input";
+import createTextInput from "../components/TextInput";
 import createSubmitInput from "../components/SubmitInput";
 
 export default {
   title: "HTML/Input",
 };
 
-export const TextInput = () => createInput({});
+export const TextInput = () => createTextInput();
 
-export const SubmitInput = () => createSubmitInput()
+export const SubmitInput = () => createSubmitInput();

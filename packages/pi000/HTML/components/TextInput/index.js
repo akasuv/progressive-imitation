@@ -1,14 +1,12 @@
 import "./index.css";
 
-function createInput({ type = "text" }) {
+function createTextInput() {
   let inputWrapper = document.createElement("div");
   inputWrapper.className = "text-input-wrapper";
 
   let innerInput = document.createElement("input");
   innerInput.addEventListener("input", handleInput);
-  if (type === "text") {
-    innerInput.classList.add("text-input");
-  }
+  innerInput.classList.add("text-input");
 
   let searchIconWrapper = document.createElement("span");
   searchIconWrapper.classList.add("icon-wrapper", "search");
@@ -69,4 +67,4 @@ function handleClear() {
   this.parentNode.classList.remove("not-empty");
 }
 
-export default createInput;
+export default createTextInput;
