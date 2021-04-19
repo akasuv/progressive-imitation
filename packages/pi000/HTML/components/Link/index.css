@@ -1,6 +1,7 @@
 @import "../../global/style.css";
 
 .link {
+  font-family: var(--primary-font-family);
   text-decoration: none;
 }
 .link:hover {
