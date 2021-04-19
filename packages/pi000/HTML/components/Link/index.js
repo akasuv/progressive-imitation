@@ -9,8 +9,16 @@ function createLink({
 }) {
   let link = document.createElement("a");
   let classList = ["link"];
-  link.innerText = label;
+  link.innerHTML = label;
   link.href = href;
+
+  if (link.firstChild instanceof SVGElement) {
+    link.classList.add("icon");
+  }
+
+  if (link.firstChild instanceof HTMLImageElement) {
+    link.classList.add("image");
+  }
 
   const mode = primary ? "link--primary" : "link--secondary";
   classList.push(mode);
