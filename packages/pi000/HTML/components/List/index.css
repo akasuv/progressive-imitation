@@ -15,7 +15,7 @@
 
 .list-wrapper .list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 8px 0;
   list-style: none;
 }
 .list-wrapper .list .list-item {
@@ -53,4 +53,14 @@
   .right-btn-wrapper
   .remove-btn:hover {
   color: #1a73e8;
+}
+
+.list-wrapper .operation-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+
+.list-wrapper .operation-wrapper .button-wrapper {
+  margin: 11px 4px;
 }

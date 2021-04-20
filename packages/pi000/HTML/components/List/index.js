@@ -1,7 +1,7 @@
 import "./index.css";
 import createLink from "../Link";
 
-function createList() {
+function createList(buttons) {
   let wrapper = document.createElement("div");
   wrapper.className = "list-wrapper";
 
@@ -48,6 +48,20 @@ function createList() {
 
   list.append(...listItems);
   wrapper.append(list);
+
+  if (buttons) {
+    let operationWrapper = document.createElement("div");
+    operationWrapper.className = "operation-wrapper";
+
+    let operations = buttons.map((b) => {
+      let buttonWrapper = document.createElement("div");
+      buttonWrapper.className = "button-wrapper";
+      buttonWrapper.append(b);
+      return buttonWrapper;
+    });
+    operationWrapper.append(...operations);
+    wrapper.append(operationWrapper);
+  }
 
   return wrapper;
 }
