@@ -1,11 +1,15 @@
 import "./index.css";
 
-function createTextInput() {
+function createTextInput(classes) {
   let inputWrapper = document.createElement("div");
   inputWrapper.className = "text-input-wrapper";
+  if (classes) {
+    inputWrapper.classList.add(...classes.split(" "));
+  }
 
   let innerInput = document.createElement("input");
   innerInput.addEventListener("input", handleInput);
+
   innerInput.classList.add("text-input");
 
   let searchIconWrapper = document.createElement("span");
